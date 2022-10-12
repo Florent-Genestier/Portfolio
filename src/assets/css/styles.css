@@ -159,8 +159,8 @@ img {
 }
 
 .project-card {
-    width: 400px;
-    height: 800px;
+    width: 600px;
+    height: 1000px;
     margin: 10px;
    
 }
@@ -184,6 +184,14 @@ hr {
     margin-right: 20px;
 }
 
+.team a {
+    color: #008395;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+.team a:hover {
+    color: #dba1b9;
+}
 .eyeglasses {
     width: 35px;
 }
@@ -215,7 +223,7 @@ footer {
 .copyright {
     font-size: 20px;
     padding: 0 30%;
-    color:#ffadad
+    color:#dba1b9
 }
 
 /**************************** ARROW *******************************************/
