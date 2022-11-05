@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
-
+ {% block head %}
 <head>
     <meta charset="UTF-8" />
-    <title>Florent Genestier-Portfolio</title>
+    {% block title %}<title>Florent Genestier-Portfolio</title>{% endblock %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+{% block stylesheets %}
     <link rel="stylesheet" href="../public/src/assets/css/styles.css" />
 
     <!-- =====BOX FONT===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    {% endblock %}
 </head>
+{% endblock head %}
 
+{% block body %}
 <body>
     <!--===== HEADER =====-->
     <header class="perso">
@@ -79,3 +82,4 @@
             </div>
         </div>
     </header>
+    {% endblock %}
