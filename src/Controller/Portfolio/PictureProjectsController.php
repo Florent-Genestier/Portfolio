@@ -6,15 +6,15 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class RecommandationsController extends AbstractController
+class PictureProjectsController extends AbstractController
 {
     /**
-     * @Route("/recommandations", name="app_portfolio_recommandations")
+     * @Route("/PictureProjects", name="app_portfolio_pictureProjects")
      */
     public function index(): Response
     {
-        return $this->render('portfolio/recommandation.html.twig', [
-            'controller_name' => 'RecommandationsController',
+        return $this->render('portfolio/pictureProjects.html.twig', [
+            'controller_name' => 'PictureProjectsController',
         ]);
     }
 }

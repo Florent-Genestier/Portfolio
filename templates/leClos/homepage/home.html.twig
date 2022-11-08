@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'leClos/base.html.twig' %}
 
 {% block body %}
 
@@ -20,7 +20,7 @@
     <div id="container">
       <div class="slider">
       {# the image lives at "public/picture/logo.jpeg" #}
-        <img class="active" src="picture/home.jpeg" alt="img1" />
+        <img class="active" src="{{ asset('picture/home.jpeg') }}" alt="img1" />
         <img class="img__slider" src="{{ asset('picture/room.jpg') }}" alt="img4" />
         <img class="img__slider" src="{{ asset('picture/kitchen.jpg') }}" alt="img5" />
         <img class="img__slider" src="{{ asset('picture/vue.jpg') }}" alt="img6" />

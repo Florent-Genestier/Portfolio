@@ -1,11 +1,12 @@
+{% block body %}
 <!--===== PROJECT =====-->
 <section class="sub-section-two" id="dev-project">
             <h2>Projets</h2>
             <div class="project-container">
                 <div class="project-card">
-                    <img class="bio" src="../public/images/project/Oclockproject.jpg" alt="La Tournichette" usemap="#project-one">
+                    <img class="bio" src="{{ asset('images/project/Oclockproject.jpg') }}" alt="La Tournichette" usemap="#project-one">
                     <map name="project-one">
-                        <area shape="default" href="pictureProjects.php" target="_blank" alt="image des projets" />
+                        <area shape="default" href="{{ path('app_portfolio_pictureProjects') }}" target="_blank" alt="image des projets" />
                     </map>
                     <h3>La Tournichette</h3>
                     <p class="subtext">Projet de fin d'étude lors de ma formation O'clock !</p>
@@ -17,11 +18,13 @@
                         <p>Technologies utilisées: Javascript, React, PHP7, Symfony 5.3, TWIG, CSS3, Bootstrap, MySQL</p>
                      </p>
                     <a href="https://github.com/Florent-Genestier"><img class="eyeglasses"
-                            src="../public/images/icons/eyeglasses.svg" alt="vue"></a>
+                            src="{{ asset('images/icons/eyeglasses.svg') }}"  alt="vue"></a>
                 </div>
                 <div class="project-card">
-                    <img class="clos" src="../public/images/project/leclos.jpg" alt="La famille">
-                    <a href="{{ path('app_leClos_homepage_home.html.twig') }}" target="_blank" alt="image des projets"></a>
+                    <img class="clos" src="{{ asset('images/project/leclos.jpg') }}" alt="La famille" usemap="#project-two">
+                     <map name="project-two">
+                    <area shape="default" href="{{ path('app_leClos_home') }}" target="_blank" alt="image des projets" />
+                    </map>
                     <h3>Le Clos</h3>
                     <p class="subtext">Projet perso pour une location !</p>
                     <hr />
@@ -29,7 +32,7 @@
                     <p>Un site perso ayant pour but de servir de vitrine à une location familiale présente sur Airbnb avec un ajout d'une section livre d'or.</p>
                     <p>Technologies utilisées: Javascript, HTML5, CSS3, PHP7, MySQL</p>
                     <a href="https://github.com/Florent-Genestier/LeClos"><img class="eyeglasses"
-                            src="../public/images/icons/eyeglasses.svg" alt="vue"></a>
+                            src="{{ asset('images/icons/eyeglasses.svg') }}" alt="vue"></a>
                 </div>
             </div>
             <div id="scroll">
@@ -41,3 +44,4 @@
             </div>
         </section>
     </main>
+{% endblock  %}

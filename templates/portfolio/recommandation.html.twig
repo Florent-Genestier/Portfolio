@@ -6,21 +6,22 @@
     <title>Florent Genestier-Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../public/src/assets/css/subpage.css" />
-
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/subpage.css') }}" />
     <!-- =====BOX FONT===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    {% endblock  %}
 </head>
     <body>
         <nav>
-        <a href="index.php#top"><img class="logo" src="../public/images/logo/lg.png" alt="Flo's logo"></a>
+        <a href="index.php#top"><img class="logo" src="{{ asset('images/logo/lg.png') }}" alt="Flo's logo"></a>
             <ul id="nav-list">
                 <li><a class="link" href="index.php#who">Qui ?</a></li>
                 <li><a class="link" href="index.php#dev-project">Projets</a></li>
-                <li><a class="link" href="recommandation.php">Recommandations</a></li>
-                <li><a class="link" href="../public/pdf/CV-FlorentGenestier-Dev.pdf">Mon CV</a></li>
+                <li><a class="link" href="{{ path('app_portfolio_recommandations') }}">Recommandations</a></li>
+                <li><a class="link" href="{{ asset('pdf/CV-FlorentGenestier-Dev.pdf') }}">Mon CV</a></li>
                 <button class="hamburger" id="hamburger">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#008395" width="45" height="45" fill="currentColor"
                         class="bi bi-list" viewBox="0 0 16 16">
@@ -60,7 +61,5 @@
             </section>
     </main>
 </body>
-<?php
-include ("footer.php");
-?>
+{{ include('portfolio/footer.html.twig') }}
 </html>
