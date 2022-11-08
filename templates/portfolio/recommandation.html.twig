@@ -16,7 +16,7 @@
 </head>
     <body>
         <nav>
-        <a href="index.php#top"><img class="logo" src="{{ asset('images/logo/lg.png') }}" alt="Flo's logo"></a>
+        <a href="{{ path('app_portfolio_home') }}#top"><img class="logo" src="{{ asset('images/logo/lg.png') }}" alt="Flo's logo"></a>
             <ul id="nav-list">
                 <li><a class="link" href="index.php#who">Qui ?</a></li>
                 <li><a class="link" href="index.php#dev-project">Projets</a></li>
@@ -47,7 +47,7 @@
                 <h2>Évènementiel Culturel</h2>
                 <h3>Mairie de Châtel-Guyon - Services des animations culturelles - Chargé de missions</h3>
                 <p>Avril à Octobre 2014 et 2015</p>
-                <div class="button"><a href="../public/pdf/lettre de recommandation.pdf">Lettre de recommandation</a></div>  
+                <div class="button"><a href="{{ asset('pdf/lettre de recommandation.pdf') }}">Lettre de recommandation</a></div>  
         </div>
 
             <!-- top-arrow -->

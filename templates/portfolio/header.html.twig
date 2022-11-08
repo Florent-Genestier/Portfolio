@@ -21,11 +21,11 @@
     <!--===== HEADER =====-->
     <header class="perso">
         <nav>
-        <a href="index.php#top"><img class="logo" src="{{ asset('images/logo/lg.png') }}" alt="Flo's logo"></a>
+        <a href="{{ path('app_portfolio_home') }}#top"><img class="logo" src="{{ asset('images/logo/lg.png') }}" alt="Flo's logo"></a>
        
             <ul id="nav-list">
-                <li><a class="link" href="index.php#who">Qui ?</a></li>
-                <li><a class="link" href="index.php#dev-project">Projets</a></li>
+                <li><a class="link" href="{{ path('app_portfolio_home') }}#who">Qui ?</a></li>
+                <li><a class="link" href="{{ path('app_portfolio_home') }}#dev-project">Projets</a></li>
                 <li><a class="link" href="{{ path('app_portfolio_recommandations') }}">Recommandations</a></li>
                 <li><a class="link" href="{{ asset('pdf/CV-FlorentGenestier-Dev.pdf') }}">Mon CV</a></li>
                 <button class="hamburger" id="hamburger">
