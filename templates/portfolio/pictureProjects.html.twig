@@ -22,8 +22,8 @@
     <nav>
         <a href="{{ path('app_portfolio_home') }}#top"><img class="logo" src="{{ asset('images/logo/lg.png') }}" alt="Flo's logo"></a>
             <ul id="nav-list">
-                <li><a class="link" href="index.php#who">Qui ?</a></li>
-                <li><a class="link" href="index.php#dev-project">Projets</a></li>
+                <li><a class="link" href="{{ path('app_portfolio_home') }}#who">Qui ?</a></li>
+                <li><a class="link" href="{{ path('app_portfolio_home') }}#dev-project">Projets</a></li>
                 <li><a class="link" href="{{ path('app_portfolio_recommandations') }}">Recommandations</a></li>
                 <li><a class="link" href="{{ asset('pdf/CV-FlorentGenestier-Dev.pdf') }}">Mon CV</a></li>
                 <button class="hamburger" id="hamburger">
@@ -58,22 +58,6 @@
     </div>
         </section>
         <section>
-        <!-- <h2>Location Le Clos</h2>
-        <div id="container">
-      <div class="slider">
-        <img class="active" src="../public/images/slide/castle.png" alt="img5" />
-              <img class="img__slider" src="../public/images/slide/combe.png" alt="img4" />
-              <img class="img__slider" src="../public/images/slide/castle.png" alt="img5" />
-              <img class="img__slider" src="../public/images/slide/guestbook.png" alt="img8" />
-            
-        <div class="next">
-          <div class="btn-navleft">←</div>
-        </div>
-        <div class="previous">
-          <div class="btn-navright">→</div>
-        </div>
-      </div>
-    </div> -->
             <div id="scroll">
                 <a href="#top"><svg clip-rule="evenodd" fill="#dba1b9" width="40" height="40" fill-rule="evenodd" stroke-linejoin="round" 
                 stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
