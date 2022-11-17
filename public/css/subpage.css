@@ -1,11 +1,9 @@
-/**************************** STRUCTURE *******************************************/
+/*================================ STRUCTURE ================================*/
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     background-color: #dcd3c2;
     min-height: 100vh;
-    
-
 }
 
 .experiences {
@@ -49,7 +47,7 @@ h3 {
     color: #808080;
 }
 
-/**************************** NAVBAR *******************************************/
+/*================================NAVBAR ================================*/
 nav {
     display: flex;
     justify-content: space-between;
@@ -104,7 +102,6 @@ h1 {
         align-self: flex-end;
     }
 
-    
     #nav-list {
         display: none;
         background-color: black;
@@ -124,16 +121,15 @@ h1 {
     .logo {
         display: none;
     }
-
 }
 
-/**************************** LOGO *********************************************/
+/*================================ LOGO ================================*/
 .logo {
     height: 150px;
     margin: 30px;
 }
 
-/**************************** ARROW *******************************************/
+/*================================ ARROW ================================*/
 #scroll {
     position: fixed;
     width: 25px;
@@ -146,7 +142,7 @@ h1 {
     width: 25px;
   }
 
-  /**************************** FOOTER *******************************************/
+  /*================================ FOOTER ================================*/
 footer {
     background-color: black;
     text-align: center;
@@ -158,30 +154,3 @@ footer {
     padding: 0 30%;
     color:#dba1b9
 }
-
-/* ********************************* SLIDER ******************************************* */
-
-/* * { 
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
-}  */
-
-/* .slide-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.card-image {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-}
-
-.card-image .card-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-} */
-

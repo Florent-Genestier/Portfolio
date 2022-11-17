@@ -1,4 +1,4 @@
-/* **************************** STRUCTURE ******************************************* */
+/* ================================ STRUCTURE ================================ */
 body {
     font-family: 'Satisfy', Arial, Helvetica, sans-serif;
     justify-content: center;
@@ -41,7 +41,7 @@ text-decoration: none;
 color: black
 }
 
-/* ********************************** NAVBAR ******************************************* */
+/* ================================ NAVBAR ================================ */
 nav {
     overflow: hidden;
     background-color: #4ea6ce;
@@ -104,7 +104,7 @@ header li a {
     }
 }
 
-/* ********************************* LEAD PICTURE ******************************************* */
+/* ================================ LEAD PICTURE ================================ */
 #leadImage {
 padding-top: 60px;
 background: url(../picture/champs.jpg) no-repeat fixed 60% 80%;
@@ -135,7 +135,7 @@ box-shadow: 1px 3px 2px #125733;
     text-shadow: 1px 3px 2px #125733;
 }
 
-/* *********************************** PRESENTATION ******************************************* */
+/* ================================ PRESENTATION ================================ */
 #presentation {
     padding: 30px 0px 20px 0px;
     background-color: #4ea6ce;
@@ -148,7 +148,7 @@ p {
     font-family: 'Satisfy', Arial, Helvetica, sans-serif;
 }
 
-/* ********************************* SLIDER / EXPOSITION ******************************************* */
+/* ================================ SLIDER / EXPOSITION ================================ */
 * {
     margin: 0;
     padding: 0;
@@ -193,7 +193,7 @@ p {
     left: 1rem;
 }
 
-/* **************************** PRICE ******************************************* */
+/* ================================ PRICE ================================ */
 #Tarifs {
   font-family: 'Satisfy', Arial, Helvetica, sans-serif;
   padding: 30px 0px 20px 0px;
@@ -251,7 +251,7 @@ margin-bottom: 70px;
   margin: 5px 0;
 }
 
-/* **************************** GUESTBOOK ******************************************* */
+/* ================================ GUESTBOOK ================================ */
 #image {
     padding-top: 60px;
     background: url(../picture/linkedin.jpg) no-repeat fixed 65% 65%;
@@ -259,7 +259,6 @@ margin-bottom: 70px;
     height: 800px;
 
 }
-
 
 #Commentary {
     padding: 80px 0 80px 0;
@@ -303,7 +302,7 @@ button:hover {
     transition: 0.3s ease-in-out;
 }
 
-/* **************************** ROOM ******************************************* */
+/* ================================ ROOM ================================ */
 
 .Room p {
     font-family: 'Satisfy', Arial, Helvetica, sans-serif;
@@ -376,7 +375,7 @@ button:hover {
     filter: alpha(opacity=10); opacity:0,5;
 }
 
-  /* **************************** FOOTER ******************************************* */
+  /* ================================ FOOTER ================================*/
 #third__lign {
     height: 1px ;
     width: 75% ;
