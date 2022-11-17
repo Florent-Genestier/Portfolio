@@ -69,6 +69,41 @@ header li a {
     float: left;
 }
 
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        align-self: flex-end;
+    }
+
+    #nav-list {
+        display: none;
+        background-color: black;
+        margin: 0px;
+    }
+
+    #nav-list.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: black;
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
 /* ********************************* LEAD PICTURE ******************************************* */
 #leadImage {
 padding-top: 60px;

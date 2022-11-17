@@ -101,13 +101,14 @@ h1 {
         align-self: flex-end;
     }
 
-    .ul {
+    
+    #nav-list {
         display: none;
         background-color: black;
         margin: 0px;
     }
 
-    ul.show {
+    #nav-list.show {
         display: block;
     }
 
