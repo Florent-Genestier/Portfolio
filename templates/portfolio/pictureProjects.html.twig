@@ -10,7 +10,7 @@
 {% block stylesheets %}
 <link rel="stylesheet" href="{{ asset('css/subpage.css') }}" />
 <link rel="stylesheet" href="{{ asset('css/carousel.css') }}" />
-
+ <link rel="stylesheet" href="{{asset('https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css')}}"/>
     <!-- =====BOX FONT===== -->
     <link rel="preconnect" href="{{ absolute_url('https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css') }}">
     <link rel="preconnect" href="{{ absolute_url('https://fonts.googleapis.com') }}">
@@ -40,8 +40,32 @@
         </nav>
     <main>
     <section>
-    {# <h2>La Tournichette</h2>
-    <div id="container">
+     <h2>La Tournichette</h2>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="{{ asset('images/slide/entree.png')}}" alt="img1" /></div>
+        <div class="swiper-slide"><img src="{{ asset('images/slide/aubergine.png') }}" alt="img2" /> </div>
+        <div class="swiper-slide"><img src="{{ asset('images/slide/carotte.png') }}" alt="img3" /></div>
+        {# <div class="swiper-slide"><img src="{{ asset('images/slide/entree.png')}}" alt="img4" /> </div>
+        <div class="swiper-slide"><img src="{{ asset('images/slide/entree.png')}}" alt="img5" /> </div>
+        <div class="swiper-slide"><img src="{{ asset('images/slide/entree.png')}}" alt="img6" /> </div>
+        <div class="swiper-slide"><img src="{{ asset('images/slide/entree.png')}}" alt="img7" /> </div>
+        <div class="swiper-slide"><img src="{{ asset('images/slide/entree.png')}}" alt="img8" /></div>
+        <div class="swiper-slide"><img src="{{ asset('images/slide/entree.png')}}" alt="img9" /></div> #}
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+
+
+
+
+     {# <div id="container">
       <div class="slider">
       <img class="img__slider" src="{{ asset('images/slide/entree.png')}}" alt="img10" />
               <img class="img__slider"  src="{{ asset('images/slide/aubergine.png') }}" alt="img1" /> 
@@ -49,9 +73,9 @@
               <img class="img__slider" src="{{ asset('images/slide/panier.png') }}" alt="img6" />
               <img class="img__slider" src="{{ asset('images/slide/detail.png') }}" alt="img9" />
               <img class="img__slider" src="{{ asset('images/slide/paiement.png') }}" alt="img10" />
-              <img class="img__slider" src="{{ asset('images/slide/ketchup.png') }}" alt="img10" />
+              <img class="img__slider" src="{{ asset('images/slide/ketchup.png') }}" alt="img10" /> #}
               
-        <div class="next">
+        {# <div class="next">
           <div class="btn-navleft">←</div>
         </div>
         <div class="previous">
@@ -61,18 +85,22 @@
     </div> #}
 
 <!-- Carousel -->
-  <div class="slide-container">
+  {# <div class="slide-container">
     <div class="slide-content">
       <div class="card-wrapper">
         <div class="card">
           <div class="image-content">
             <span class="overlay">
                <div class="card-image">
-                  <img src="" alt="" class="card-img">
+                  <img src="{{ asset('images/slide/entree.png')}}" alt="img10" class="card-img">
     
   </div>
     </div>
       </div>
+        </div>
+          </div>
+           </div> #}
+            
 
         </section>
         <section>

@@ -3,6 +3,9 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     background-color: #dcd3c2;
+    min-height: 100vh;
+    
+
 }
 
 .experiences {
@@ -158,57 +161,27 @@ footer {
 
 /* ********************************* SLIDER ******************************************* */
 
-/* * { */
-    /* margin: 0;
-    padding: 0; */
-    /* box-sizing: border-box;
-} 
+/* * { 
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}  */
 
-.slider {
-    height: 50vh;
-    position: relative;
+/* .slide-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
- .slider img {
-    object-fit: cover;
+.card-image {
+    position: relative;
     height: 100%;
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity .10s;
+    border-radius: 50%;
 }
 
-.slider img.active {
-    opacity: 1;
-}
-
-.next, .previous {
-    color: #dba1b9;
-    opacity: 0.5;
-    font-size: 6rem;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
-
-.next {
-    right: 1rem;
-}
-
-.previous {
-    left: 1rem;
-}
-
-.img__slider {
-    height: 50px;
-    width: 25px;
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 } */
 
-/* .img__slider {
-background-size: contain;
-height: 
-width: 
-} */
